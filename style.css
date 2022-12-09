@@ -274,6 +274,98 @@ body > div {
 
 
 
+/* shape-7 */
+.shape-7{
+    background-color: #293462;
+}
+.shape-7 div{
+    width: 10rem;
+    height: 10rem;
+    background-color: #fe5f55;
+    border-radius: 5rem 5rem 3rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: start;
+    position: relative;
+    overflow: hidden;
+}
+.shape-7 div span{
+    background-color: #fff1c1;
+    
+}
+.shape-7 div span:nth-child(1), .shape-7 div span:nth-child(2){
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-top: -2.4rem;
+}
+.shape-7 div span:nth-child(3), .shape-7 div span:nth-child(4){
+    width:3rem;
+    height: 3rem;
+    border-radius: 50%;
+    
+}
+
+.shape-7 div span:nth-child(5){
+    width: 2.5rem;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+    position: absolute;
+    bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+/* shape8 */
+.shape-8{
+   background-color: #998235;
+}
+.shape-8 div:nth-child(2){
+    width:8rem;
+    height: 8rem;
+    border-radius: 50%;
+    position: relative;
+    background-color: #1a4341;
+    z-index:2;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    gap: 1rem;
+}
+.shape-8 div:nth-child(2) span{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    z-index: 3;
+    background-color: #1a4341;
+    border: 0.5rem solid #998235;
+}
+.shape-8 div:nth-child(2)::before{
+    content:"";
+    width:80%;
+    height: 1.2rem;
+    position: absolute;
+    background-color: #1a4341;
+   top: 35%;
+}
+.shape-8 div:nth-child(2)::after{
+    content: '';
+    width: 5.5rem;
+    height: 3.5rem;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    bottom: -1rem;
+}
+
+
 
 
 @media screen and (max-width: 992px){
