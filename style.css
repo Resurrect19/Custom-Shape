@@ -327,12 +327,13 @@ body > div {
    background-color: #998235;
 }
 .shape-8 div:nth-child(2){
-    width:8rem;
-    height: 8rem;
-    border-radius: 50%;
-    position: relative;
+    width: 8.5rem;
+    height: 8.5rem;
     background-color: #1a4341;
-    z-index:2;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+
     display: flex;
     justify-content: center;
     
@@ -343,7 +344,7 @@ body > div {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    z-index: 3;
+
     background-color: #1a4341;
     border: 0.5rem solid #998235;
 }
@@ -357,13 +358,198 @@ body > div {
 }
 .shape-8 div:nth-child(2)::after{
     content: '';
-    width: 5.5rem;
+    width: 3.5rem;
     height: 3.5rem;
     position: absolute;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 50%;
-    bottom: -1rem;
+    bottom: -3rem;
+    border: 0.8rem solid transparent;
+    border-top-color: white;
+    border-left-color: white;
+    transform: rotate(45deg);
 }
+.shape-8 div:nth-child(1), .shape-8 div:nth-child(3){
+    width: 3rem;
+    height: 8rem;
+    background-color: #1a4341;
+    border-radius: 50%;
+    position: relative;
+}
+.shape-8 div:nth-child(1)::after, .shape-8 div:nth-child(3)::after
+{
+    content: '';
+    width: 80%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #0b2429;
+    position: absolute;
+    right: 0;
+    }
+    .shape-8 div:nth-child(3)::after{
+        left: 0;
+    }
+.shape-8::before{
+    content: "";
+    width: 1.8rem;
+    height: 42%;
+    background-color: #0b2429;
+    border-radius: 2rem 2rem 0rem 0rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+/* shape9 */
+.shape-9{
+    background-color: #293462;
+}
+.shape-9 span {
+    background-color: #fff1c1;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.shape-9 span::before{
+    content: '';
+    width: 6rem;
+    height: 6rem;
+    background-color: #fe5f55;
+    position: absolute;
+    bottom: -2.8rem;
+    transform: rotate(45deg);
+}
+.shape-9 span::after{
+    content: '';
+    width: 9rem;
+    height: 9rem;
+    background-color: #fe5f55;
+    position: absolute;
+    right: -1rem;
+    bottom: -3rem;
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+/* shape-10 */
+.shape-10{
+    background-color: #998235;
+    flex-direction: column;
+}
+.shape-10 div{
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+}
+.shape-10 div:first-child span{
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    border-radius: 50% 50% 50% 0;
+}
+.shape-10 div:first-child span:nth-child(1){
+    border-radius: 50% 50% 0 50%;
+}
+.shape-10 div:last-child{
+    background-color: #eff33c;
+    border-radius: 3rem;
+    display: flex;
+    gap: 0.4rem;
+    overflow: hidden;
+    justify-content: start;
+
+}
+.shape-10 div:last-child span{
+    background-color: black;
+    width: 1.8rem;
+    height: 100%;
+}
+.shape-10 div:last-child span:last-child{
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    align-self: start;
+    margin:0.9rem 0rem 0rem 0.6rem;
+}
+
+
+
+
+
+
+
+
+/* shape11 */
+.shape-11{
+    background-color: #293462;
+}
+.shape-11 div:nth-child(2){
+    background-color: #fff1c1;
+    width: 6rem;
+    height: 4rem;
+    border-radius: 0 0 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 0.5rem;
+    align-items: flex-start;
+}
+.shape-11 div:nth-child(2) span{
+    width: 1.8rem;
+    height: 0.3rem;
+    background-color: #e97676;
+    border-radius: 5px;
+    margin-top:0.4rem ;
+}
+.shape-11 div:nth-child(2) span:nth-child(3){
+    align-self: end;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    margin:0.6rem 0.3rem 0 0;
+    z-index: 3;
+}
+.shape-11 div:nth-child(1), .shape-11 div:nth-child(3){
+    width: 3rem;
+    height: 2.5rem;
+    border: 7px solid #fff1c1;
+    align-self: center;
+    margin-top:-1.5rem;
+    border-radius: 2rem 0 0 2rem;
+    transform: translateX(10%);
+}
+.shape-11 div:nth-child(3){
+    border-radius: 0 2rem 2rem 0;
+    transform: translateX(-10%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
